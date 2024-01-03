@@ -15,6 +15,6 @@ public class ProductCategory {
     private Long id;
     @Column(name = "category_name")
     private String categoryName;
-@OneToMany(cascade = CascadeType.ALL, mappedBy = "category")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "category")
     private Set<Product> products;
 }
